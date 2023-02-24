@@ -1,5 +1,6 @@
 .content{
     display: flex;
+    flex-direction:column;
     gap:20px;
     height: 100vh;
     /* width:90%; */
@@ -8,6 +9,6 @@
 .info{
     padding:20px;
 }
-.image{
+/* .image{
     width:50px;
-}
+} */

@@ -14,7 +14,7 @@ export class ActivateGuard implements CanActivate, CanActivateChild {
     if(status){
       return true
     }else{
-      prompt("KINDLY LOGIN")
+      alert("KINDLY LOGIN")
       this.router.navigate(['login'])
       return false
     }

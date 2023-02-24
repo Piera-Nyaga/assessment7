@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomepageComponent } from './homepage/homepage.component';
-import { AuthorService} from './services/author.service';
+import { ActivateGuard } from './services/activate.guard';
 
 
 
@@ -9,7 +9,7 @@ import { AuthorService} from './services/author.service';
 const routes: Routes = [
 
   {path: '', component: HomepageComponent},
-  {path: 'add', loadComponent:() => import('./add/add.component').then(a=>a.AddComponent), canActivate: [AuthorService ]},
+  {path: 'add', loadComponent:() => import('./add/add.component').then(a=>a.AddComponent), canActivate: [ActivateGuard ]},
   {path: 'display', loadComponent:() => import('./display/display.component').then(d=>d.DisplayComponent)},
   {path: 'login', loadComponent:() => import('./login/login.component').then(l=>l.LoginComponent )},
 
