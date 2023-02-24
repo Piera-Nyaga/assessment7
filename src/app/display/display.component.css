@@ -1,0 +1,16 @@
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin: 30px;
+    gap:15px;
+}
+
+.display{
+    padding: 10px;
+    background-color: bisque;
+}
+
+h1{
+    align-content: center;
+}

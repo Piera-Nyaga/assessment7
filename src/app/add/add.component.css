@@ -1,0 +1,19 @@
+.container{
+    padding:50px;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    padding: 40PX;
+    background-color: blanchedalmond;
+
+}
+ form input{
+    height:30px;
+    width: 50%;
+    border-radius: 7px;
+ }

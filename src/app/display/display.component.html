@@ -1,0 +1,15 @@
+<h1>PARCELS: </h1>
+<div class="content" *ngIf="parcels.length>0; else nothing">
+    
+    <div class="display" *ngFor="let one of parcels ">
+        
+        <h3>Name: {{one.name}}</h3>
+        <p>Email: {{one.email}}</p>
+        <h4>Destination: {{one.destination}}</h4>
+
+    </div>
+</div>
+
+<ng-template #nothing>
+    <h3>NO PARCEL HERE</h3>
+</ng-template>
